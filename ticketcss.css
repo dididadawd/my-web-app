@@ -1,0 +1,106 @@
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+#homepage {
+display: flex;
+flex-direction: column;
+min-height: 15vh;
+}
+
+header {
+	background-color: #1d1d1d;
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+	color: #f00;
+}
+
+#ticket-purchase {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+}
+
+#seating-chart {
+  text-align: center;
+  margin: 20px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}

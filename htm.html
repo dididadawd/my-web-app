@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<!-- <script src="script.js"></script> -->
+	<title>Accordion Orchestra</title>
+</head>
+<body>
+	<!-- Homepage -->
+	
+	<div id="homepage">
+		<header>
+			<div class="header-left">
+			    <h1>Welcome to the Accordion Orchestra</h1>
+			</div>
+			<nav>
+			    <ul>
+				<li><a href="htm.html">Home</a></li>
+				<li><a href="VideosPage.html">Videos</a></li>
+				<li><a href="ticket-purchase.html">Purchase Tickets</a></li>
+				<li><a href="join-orchestra.html">Join the Orchestra</a></li>
+				<li><a href="contactUs.html">Contact Us</a></li>
+			    </ul>
+			</nav>
+			<div class="header-right">
+			    <img src="https://static.wixstatic.com/media/319924_3e3fd4ca44f441e7806afeb9864e8b79~mv2.jpg/v1/fill/w_1339,h_567,al_c,q_85,enc_auto/319924_3e3fd4ca44f441e7806afeb9864e8b79~mv2.jpg" alt="Accordion Orchestra logo">
+			</div>
+		</header>
+		<main>
+			<section id="banner">
+				<h2>About the orchestra</h2>
+				<h3>
+					The Be'er Sheva Accordion Orchestra is a unique and exceptional phenomenon in Israeli music. Founded in 1982 by maestro Victor Derenboim, the orchestra consists of about 35 talented musicians with diverse backgrounds, ranging in age from 14 to 80. Their repertoire includes classical, folklore, jazz, and popular music. The orchestra rehearses once a week for two hours and performs twice a year in Beer Sheva, as well as at various festivals in Israel and abroad. Don't miss the opportunity to hear this amazing orchestra!
+				</h3>
+			</section>
+			<div class = "black">
+				<div id="	">
+					<h2>Meet Our Talented Musicians</h2>
+					<p>Our orchestra consists of about 35 talented musicians with diverse backgrounds, ranging in age from 14 to 80. Each musician brings their unique style and passion to the group, creating a harmonious blend of sound.</p>
+					<div class="gallery-item-victor">
+						<img src="https://static.wixstatic.com/media/319924_103997ae0f264769b5b9352fa8c67f15~mv2.jpg/v1/crop/x_0,y_1,w_420,h_633/fill/w_279,h_420,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/319924_103997ae0f264769b5b9352fa8c67f15~mv2.jpg" alt="Accordion Orchestra musician">
+						<p>Victor deremboim is an artist that lnow a lot and I dont know what to write about hom so I will stop</p>
+					</div>
+					<div class="gallery">
+						<div class="gallery-item">
+							<img src="https://static.wixstatic.com/media/319924_b19c283f81734c59b9ad2c680d7352ee~mv2.jpg/v1/crop/x_18,y_0,w_551,h_441/fill/w_325,h_260,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/319924_b19c283f81734c59b9ad2c680d7352ee~mv2.jpg" alt="Accordion Orchestra musician">
+							<p>Victor Aryutkin</p>
+							<h1 class="description">Description goes here</h1>
+						</div>
+						<div class="gallery-item">
+							<img src="https://static.wixstatic.com/media/319924_dcbd7e0357124d4591458636c4940e32~mv2.jpg/v1/crop/x_0,y_2,w_554,h_438/fill/w_325,h_260,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/319924_dcbd7e0357124d4591458636c4940e32~mv2.jpg" alt="Accordion Orchestra musician">
+							<p>ori ofek</p>
+							<h1 class="description">Description goes here</h1>
+						</div>
+						<div class="gallery-item">
+							<img src="https://static.wixstatic.com/media/319924_0e02ef4d78a848ff9380a0424abe6583~mv2.jpg/v1/crop/x_0,y_7,w_892,h_705/fill/w_390,h_307,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/319924_0e02ef4d78a848ff9380a0424abe6583~mv2.jpg" alt="Accordion Orchestra musician">
+							<p>Anna Freidkin</p>
+							<h1 class="description">Description goes here</h1>
+						</div>
+						<div class="gallery-item">
+							<img src="https://static.wixstatic.com/media/319924_b54d0fe807fa4c2aa91d64f670a1b219~mv2.jpg/v1/crop/x_0,y_18,w_1218,h_963/fill/w_390,h_307,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/319924_b54d0fe807fa4c2aa91d64f670a1b219~mv2.jpg" alt="Accordion Orchestra musician">
+							<p>Isabel Marie Haas</p>
+							<h1 class="description">Description goes here</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				const galleryItems = document.querySelectorAll('.gallery-item');
+
+				galleryItems.forEach(item => {
+				    const image = item.querySelector('img');
+				    const description = item.querySelector('.description');
+				    image.addEventListener('click', () => {
+						description.classList.toggle('show-description');
+					});
+				});
+			</script>
+			<section id="about">
+				<h2>Check Out Our Videos</h2>
+				<div class="video">
+					<div >
+						<iframe class="video" src="https://www.youtube.com/embed/CtLjzBkzf6Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div >
+						<iframe class="video" src="https://www.youtube.com/embed/QG7n6AonXh4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+			<section id="tickets">
+				<h2>Get Your Tickets Now</h2>
+				<p>Be part of the magic and join us for our next performance. Get your tickets now:</p>
+				<button class="button" onclick="window.location.href='ticket-purchase.html'">Purchase Tickets</button>
+			</section>
+			<section id="join">
+				<h2>Join the Orchestra</h2>
+				<p>Are you a passionate accordionist? Join our orchestra and share your talent with the world:</p>
+				<button class="button" onclick="window.location.href='join-orchestra.html'">Join the Orchestra</button>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2023 Accordion Orchestra. All rights reserved.</p>
+		</footer>
+	</div>
+
+
+</body>
+</html>
+
